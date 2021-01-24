@@ -1,0 +1,25 @@
+<%- include('header'); -%>
+<form action="/index.html" method="post">
+  <button type="button submit" class="btn btn-primary"> Add </button>
+</form>
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Mobile</th>
+    <th>Gender</th>
+    <th>Role</th>
+  </tr>
+<% userData.forEach(function(data){ %>
+  <tr>
+      <td><%=data.name%></td>
+      <td><%=data.email%></td>
+      <td><%=data.mobile%></td>
+      <td><%=data.gender%></td>
+      <td><%=data.role%></td>
+  </tr>
+<%  }); %>
+
+</table>
+
+<%- include('footer'); -%>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Form</title>
+  <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+  <h1>Sign up form</h1>
+  <form action="/data" method="post">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="exampleFormControlInput1">Name</label>
+        <input type="text" name="Name" class="form-control" placeholder="eg:John Doe">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="exampleFormControlInput1">Email address</label>
+        <input type="email" name="Email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="exampleFormControlInput1">Mobile Number</label>
+        <input type="text" name="Mobile" class="form-control" placeholder="eg:9900000000">
+      </div>
+      <div class="form-group form-check-inline col-md-6">
+        <label for="exampleFormControlInput1">Gender</label>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" name="optradio" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+          <label class="form-check-label" for="inlineRadio1">Male</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" name="optradio" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <label class="form-check-label" for="inlineRadio2">Female</label>
+        </div>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="exampleFormControlSelect1">Role</label>
+        <select name="Role" class="form-control" id="exampleFormControlSelect1">
+          <option>Admin</option>
+          <option>User</option>
+        </select>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="exampleFormControlFile1">Profile Picture</label>
+        <input name="Pic" type="file" class="form-control-file" id="exampleFormControlFile1">
+      </div>
+      <button class="form-group w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
+    </div>
+
+  </form>
+
+</body>
+
+</html>
